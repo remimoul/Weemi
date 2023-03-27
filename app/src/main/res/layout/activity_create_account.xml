@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateAccountActivity">
+
+    <ImageButton
+        android:id="@+id/createForwardImageButton"
+        android:layout_width="56dp"
+        android:layout_height="48dp"
+        android:contentDescription="forwardButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.004"
+        app:srcCompat="@drawable/left" />
+
+    <TextView
+        android:id="@+id/createTextView"
+        android:layout_width="83dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:text="Accueil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.014"
+        app:layout_constraintStart_toEndOf="@+id/createForwardImageButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/connectTextView"
+        android:layout_width="295dp"
+        android:layout_height="97dp"
+
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/roboto_black"
+        android:gravity="center"
+        android:text="Nouveau compte"
+        android:textColor="@color/Blue"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/createEmailAddressTextView"
+        android:layout_width="280dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Votre adresse e-mail"
+        app:layout_constraintBottom_toTopOf="@+id/createTextPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/connectTextView" />
+
+    <EditText
+        android:id="@+id/createTextPersonPrenom"
+        android:layout_width="280dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Prenom"
+        app:layout_constraintBottom_toTopOf="@+id/createEditPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createTextPersonName" />
+
+    <EditText
+        android:id="@+id/createTextPersonName"
+        android:layout_width="280dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nom"
+        app:layout_constraintBottom_toTopOf="@+id/createTextPersonPrenom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createEmailAddressTextView" />
+
+    <EditText
+        android:id="@+id/createEditPassword"
+        android:layout_width="280dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="mot de passe"
+        app:layout_constraintBottom_toTopOf="@+id/createConfirmEditPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createTextPersonPrenom" />
+
+    <EditText
+        android:id="@+id/createConfirmEditPassword"
+        android:layout_width="280dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Confirmer mot de passe"
+        app:layout_constraintBottom_toTopOf="@+id/createValiderButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createEditPassword" />
+
+    <Button
+        android:id="@+id/createValiderButton"
+        android:layout_width="267dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/bouton_arrondi"
+        android:focusable="true"
+        android:text="CREE UN COMPTE"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.442"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/errorCreateAccountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="email ou mot de passe incorrect"
+        android:textSize="20dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/createEmailAddressTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/connectTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConnectActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CreateAccountActivity"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="-87dp">
+
+        <ImageButton
+            android:id="@+id/createForwardImageButton"
+            android:layout_width="56dp"
+            android:layout_height="48dp"
+            android:contentDescription="forwardButton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.004"
+            app:srcCompat="@drawable/left" />
+
+        <TextView
+            android:id="@+id/createTextView"
+            android:layout_width="83dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:text="Accueil"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.014"
+            app:layout_constraintStart_toEndOf="@+id/createForwardImageButton"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/connectTextView"
+            android:layout_width="295dp"
+            android:layout_height="97dp"
+
+            android:layout_marginTop="88dp"
+            android:fontFamily="@font/roboto_black"
+            android:gravity="center"
+            android:text="Bonjour Weemi !"
+            android:textColor="@color/Blue"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/createEmailAddressTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/createTextView" />
+
+        <EditText
+            android:id="@+id/createEmailAddressTextView"
+            android:layout_width="280dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:hint="Adresse e-mail ..."
+            app:layout_constraintBottom_toTopOf="@+id/createEditPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/connectTextView" />
+
+        <EditText
+            android:id="@+id/createEditPassword"
+            android:layout_width="280dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Mot de passe..."
+            app:layout_constraintBottom_toTopOf="@+id/createValiderButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/createEmailAddressTextView" />
+
+        <Button
+            android:id="@+id/createValiderButton"
+            android:layout_width="267dp"
+            android:layout_height="57dp"
+            android:background="@drawable/bouton_arrondi"
+            android:focusable="true"
+            android:text="VALIDER"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/forgotPasswordTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/createEditPassword" />
+
+        <TextView
+            android:id="@+id/forgotPasswordTextView"
+            android:layout_width="135dp"
+            android:layout_height="23dp"
+            android:gravity="center"
+            android:text="Mot de passe oublié"
+            android:textColorHint="#273375"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/createValiderButton" />
+
+        <ProgressBar
+            android:id="@+id/errorConnectAccountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/createEmailAddressTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/connectTextView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

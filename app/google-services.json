@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "973869059520",
+    "project_id": "weemi-5979e",
+    "storage_bucket": "weemi-5979e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:973869059520:android:a574bbba0fd07905548c25",
+        "android_client_info": {
+          "package_name": "com.example.weemi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "973869059520-2b05kd4mmddknsg6v8maspdlrgaugq9h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoVMzqGU6cBEcFKhwzy1S-ZiZTFV6cfzI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "973869059520-2b05kd4mmddknsg6v8maspdlrgaugq9h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
